@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es-MX">
+    <head>
+        <title>Practica 01</title>
+        <meta charset="utf-8">
+        <meta name="description" content="pagina de práctica html5">
+        <meta name="keywords" content="html5 javascript css php java">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author"	 content="Empresa XYZ">
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="cache-control" content="no-cache"/>
+        <meta http-equiv="expires" content="0"/>
+        <!--
+        <meta http-equiv="refresh" content="10; url=http://plataforma.voaxaca.tecnm.mx/course/view.php?id=186"/>
+        
+        <link href="css/miestilo.css" type="text/css" rel="stylesheet">
+        <script src="js/codigojavascript.js" type="text/javascript"></script>
+        -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <h1>Seccion de menus</h1>
+            </nav>
+        </header>
+        Hello community ITVO !
+        <a href="http://www.google.com.mx">google</a> <br>
+        <a href="http://www.microsoft.com.mx" target="_blank" >Microsoft</a>
+        <a href="http://www.hp.com">
+        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1CmIw?ver=e555&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true" 
+        alt = "Imagen no disponible" 
+        width = "100px" height = "100px"
+        title = "Imagen de una super computadora">
+        </a>
+        <h1>Elemento h1</h1>
+        <h2>Elemento h2</h2>
+        <h3>Elemento h3</h3>
+        <h4>Elemento h4</h4>
+        <h5>Elemento h5</h5>
+        <h6>Elemento h6</h6>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>fila 1, col 1</td>
+                    <td>fila 1, col 2</td>
+                    <td>fila 1, col 3</td>
+                </tr>
+                <tr>
+                    <td>fila 2, col 1</td>
+                    <td>fila 2, col 2</td>
+                    <td>fila 2, col 3</td>
+                </tr>
+                <tr>
+                    <td>fila 3, col 1</td>
+                    <td>fila 3, col 2</td>
+                    <td>fila 3, col 3</td>
+                </tr>                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Espacio para el pie de tabla</td>
+                </tr> 
+            </tfoot>
+        </table>
+
+        <form action="recibedatos.php" method="POST" 
+            enctype="multipart/form-data"  >
+            <label for="cuenta">Introduzca su cuenta:</label>
+            <input type="text" id="cuenta" name="cuenta"> <br>
+            <label for="password">Introduzca su password:</label>
+            <input type="password" id="password" name="password"> <br>
+                       
+            <input type="checkbox" name="recordar" >Recordar contraseña <br>
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera" >
+                <option value="1">Ing. Tics</option>
+                <option selected value="2">Ing. Informática</option>
+                <option value="3">Ing. Forestal</option>
+                <option value="4">Ing. en Agronomia</option>
+                <option value="5">Lic. Biología</option>
+            </select>
+            
+    
+            <input type="radio" id="sexo_h" name="sexo" value="H">Hombre
+            <input type="radio" id="sexo_m" name="sexo" value="M">Mujer <br>
+
+            <br>
+            <label for = "email">Correo: </label>
+            <input type="email" required 
+                id="email" name="email"
+                placeholder="xxxx@voaxaca.tecnm.mx"
+            > <br>
+            <label for = "edad">Edad: </label>
+            <input type="number" required 
+                id="edad" name="edad" max="99" min="18"
+                placeholder="99"
+            > <br>
+            <label for = "telefono">Telefono: </label>
+            <input type="tel" required 
+                id="telefono" name="telefono"
+            > <br>            
+            <label for = "nombre">Nombre: </label>
+            <input type="text" required 
+                id="nombre" name="nombre"
+                maxlength="5"
+            > <br>  
+
+            <input type="search" id="modelos" name="modelos"
+                list="listamodelos"> <br>
+
+            <input type="submit" value="guardar datos">
+        </form>
+        <datalist id="listamodelos">
+            <option value="Camaro">
+            <option value="Corvette">
+            <option value="Impala">
+            <option value="Colorado">
+        </datalist>
+
+        <br>
+        <ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item active"><a class="page-link" href="practica_01.html">1</a></li>
+  <li class="page-item"><a class="page-link" href="practica_02.html">2</a></li>
+  <li class="page-item"><a class="page-link" href="pratica3.html">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+    </body>
+
+</html>
